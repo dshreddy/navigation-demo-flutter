@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'raised_button.dart';
-import 'screen1.dart';
 
 class Screen2 extends StatelessWidget {
   const Screen2({super.key});
@@ -18,9 +17,7 @@ class Screen2 extends StatelessWidget {
           color: Colors.blue,
           child: const Text('Go Back To Screen 1'),
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return const Screen1();
-            }));
+            Navigator.pushNamed(context, 'first');
           },
         ),
       ),
